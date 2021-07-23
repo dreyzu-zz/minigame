@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chore Door!</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://content.codecademy.com/projects/chore-door/images/logo.svg" />
+    </div>
+    <div class="title">
+        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" />
+        <h2 class='instruction'>Instructions</h2>
+        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" />
+    </div>
+    <table class="instruction-zone">
+        <tbody>
+            <tr>
+                <td class="instruction-num">1</td>
+                <td class="instruction-txt">Hiding behind one of these doors is the ChoreBot.</td>
+            </tr>
+            <tr>
+                <td class="instruction-num">2</td>
+                <td class="instruction-txt">Your mission is to open all of the doors without running into the ChoreBot.
+                </td>
+            </tr>
+            <tr>
+                <td class="instruction-num">3</td>
+                <td class="instruction-txt">If you manage to avoid the ChoreBot until the very last door, you win!</td>
+            </tr>
+            <tr>
+                <td class="instruction-num">4</td>
+                <td class="instruction-txt">See if you can score a winning streak!</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="door-container">
+        <img id="door1" class="door-frame"
+            src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" />
+        <img id="door2" class="door-frame"
+            src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" />
+        <img id="door3" class="door-frame"
+            src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" />
+    </div>
+    <div class="startcont">
+        <button class="start-row" id="start">Good Luck!</button>
+    </div>
+    <table class='score-row'>
+        <tbody>
+            <tr>
+                <th class='score-text'>Current streak:</th>
+                <th class='score-text'>Best streak:</th>
+            </tr>
+            <tr>
+                <th class='score-box' id='score-num'>0</th>
+                <th class='score-box' id='high-score'>0</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
